@@ -1,0 +1,30 @@
+<div class="col-sm-6">
+  <h3>template diven form</h3>
+  <form #f="ngForm" ngForm>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class= "form-control" id="name" ngModel>
+    </div>
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" class="form-control" id="age"#a="ngModel" ngModel>
+    </div>
+    <div ngModelGroup="fullName">
+      <div class="form-group">
+        <label for="name">first Name:</label>
+        <input type="text" class="form-control" id="firstname" name="firstname"ngModel>
+      </div>
+      <div class="form-group">
+        <label for="name">last Name:</label>
+        <input type="text" class="form-control" id="lastname" name="lastname"ngModel>
+      </div>
+    </div>
+    <button type="text" class="btn btn-default" (click)="onSubmit(f.value)">submit</button>
+  </form>
+
+  <p>form value:{{f.value|json}}</p>
+  <p>age:{{f.value|json}}</p>
+  <p>age changed:{{a.dirty}}</p>
+
+</div>
+

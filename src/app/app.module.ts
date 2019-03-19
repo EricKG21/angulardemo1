@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LifeCycleComponent } from './demos/life-cycle/life-cycle.component';
@@ -12,6 +12,8 @@ import { ViewEncapsulationComponent } from './demos/view-encapsulation/view-enca
 import { VeNativeComponent } from './demos/view-encapsulation/ve-native/ve-native.component';
 import { VeEmulatedComponent } from './demos/view-encapsulation/ve-emulated/ve-emulated.component';
 import { VeNoneComponent } from './demos/view-encapsulation/ve-none/ve-none.component';
+import { FormComponent } from './demos/form/form.component';
+import { TemplateDrivenComponent } from './demos/form/template-driven/template-driven.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,14 @@ import { VeNoneComponent } from './demos/view-encapsulation/ve-none/ve-none.comp
     ViewEncapsulationComponent,
     VeNativeComponent,
     VeEmulatedComponent,
-    VeNoneComponent
+    VeNoneComponent,
+    FormComponent,
+    TemplateDrivenComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

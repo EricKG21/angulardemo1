@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule} from '@angular/forms'
+import { FormsModule, ReactiveFormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LifeCycleComponent } from './demos/life-cycle/life-cycle.component';
@@ -14,6 +14,8 @@ import { VeEmulatedComponent } from './demos/view-encapsulation/ve-emulated/ve-e
 import { VeNoneComponent } from './demos/view-encapsulation/ve-none/ve-none.component';
 import { FormComponent } from './demos/form/form.component';
 import { TemplateDrivenComponent } from './demos/form/template-driven/template-driven.component';
+import { ReactiveComponent } from './demos/form/reactive/reactive.component';
+import { ReactiveFbComponent } from './demos/form/reactive-fb/reactive-fb.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,15 @@ import { TemplateDrivenComponent } from './demos/form/template-driven/template-d
     VeEmulatedComponent,
     VeNoneComponent,
     FormComponent,
-    TemplateDrivenComponent
+    TemplateDrivenComponent,
+    ReactiveComponent,
+    ReactiveFbComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

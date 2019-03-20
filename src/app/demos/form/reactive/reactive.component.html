@@ -1,0 +1,14 @@
+<div class="col-sm-6">
+  <h3>reactive form</h3>
+  <form [formGroup]= "myFormGroup">
+    <div class="form-group">
+      <label for="name">name:</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+    <div class="form-group">
+      <label for="age">age:</label>
+      <input type="number" class="form-control" id="age" formControlName="age">
+    </div>
+    <button type="button" class="btn btn-default" (click)="onSubmit()">summit</button>
+  </form>
+</div>

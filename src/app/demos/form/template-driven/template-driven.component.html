@@ -3,20 +3,20 @@
   <form #f="ngForm" ngForm>
     <div class="form-group">
       <label for="name">Name:</label>
-      <input type="text" class= "form-control" id="name" ngModel>
+      <input type="text" class= "form-control" id="name" name="name" ngModel>
     </div>
     <div class="form-group">
       <label for="age">Age:</label>
-      <input type="number" class="form-control" id="age"#a="ngModel" ngModel>
+      <input type="number" class="form-control" id="age" name="age" #a="ngModel" ngModel>
     </div>
     <div ngModelGroup="fullName">
       <div class="form-group">
         <label for="name">first Name:</label>
-        <input type="text" class="form-control" id="firstname" name="firstname"ngModel>
+        <input type="text" class="form-control" id="firstname" name="firstname" ngModel>
       </div>
       <div class="form-group">
         <label for="name">last Name:</label>
-        <input type="text" class="form-control" id="lastname" name="lastname"ngModel>
+        <input type="text" class="form-control" id="lastname" name="lastname" ngModel>
       </div>
     </div>
     <button type="text" class="btn btn-default" (click)="onSubmit(f.value)">submit</button>

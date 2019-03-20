@@ -16,6 +16,7 @@ import { FormComponent } from './demos/form/form.component';
 import { TemplateDrivenComponent } from './demos/form/template-driven/template-driven.component';
 import { ReactiveComponent } from './demos/form/reactive/reactive.component';
 import { ReactiveFbComponent } from './demos/form/reactive-fb/reactive-fb.component';
+import { ExampleComponent } from './example/example.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ReactiveFbComponent } from './demos/form/reactive-fb/reactive-fb.compon
     FormComponent,
     TemplateDrivenComponent,
     ReactiveComponent,
-    ReactiveFbComponent
+    ReactiveFbComponent,
+    ExampleComponent
   ],
   imports: [
     BrowserModule,

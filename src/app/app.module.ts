@@ -16,7 +16,21 @@ import { FormComponent } from './demos/form/form.component';
 import { TemplateDrivenComponent } from './demos/form/template-driven/template-driven.component';
 import { ReactiveComponent } from './demos/form/reactive/reactive.component';
 import { ReactiveFbComponent } from './demos/form/reactive-fb/reactive-fb.component';
-import { ExampleComponent } from './example/example.component';
+// import { ExampleComponent } from './example/example.component';
+import { DirectiveComponent } from './demos/directive/directive.component';
+// import { NgDerictiveComponent } from './demos/directive/ng-derictive/ng-derictive.component';
+import { NgDirectiveComponent } from './demos/directive/ng-directive/ng-directive.component';
+import { ListitemComponent } from './demos/directive/ng-directive/listitem/listitem.component';
+import { CustomDirectiveComponent } from './demos/directive/custom-directive/custom-directive.component';
+import { MyhiddenDirective } from './demos/directive/custom-directive/myhidden.directive';
+import { MyifDirective } from './demos/directive/custom-directive/myif.directive';
+import { ComponentCommunicationComponent } from './demos/component-communication/component-communication.component';
+import { CcChildComponent } from './demos/component-communication/cc-child/cc-child.component';
+import { CcParentComponent } from './demos/component-communication/cc-parent/cc-parent.component';
+import { CcAnotherChildComponent } from './demos/component-communication/cc-another-child/cc-another-child.component';
+import { PipeComponent } from './demos/pipe/pipe.component';
+import { CurrencyExchangePipe } from './demos/pipe/currency-exchange.pipe';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +48,19 @@ import { ExampleComponent } from './example/example.component';
     TemplateDrivenComponent,
     ReactiveComponent,
     ReactiveFbComponent,
-    ExampleComponent
+    DirectiveComponent,
+    NgDirectiveComponent,
+    ListitemComponent,
+    MyhiddenDirective,
+    CustomDirectiveComponent,
+    MyifDirective,
+    ComponentCommunicationComponent,
+    CcChildComponent,
+    CcParentComponent,
+    CcAnotherChildComponent,
+    PipeComponent,
+    CurrencyExchangePipe,
+    
   ],
   imports: [
     BrowserModule,

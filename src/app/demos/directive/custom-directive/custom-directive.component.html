@@ -1,0 +1,9 @@
+<div appMyhidden [person]="person">
+  person: {{ person? person.name : '' }}
+</div>
+
+<div *appMyif= "person">
+  person: {{ person.name }}
+</div>
+
+<button class="btn btn-primary" (click)="togglePerson()">toggel person</button>

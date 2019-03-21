@@ -5,8 +5,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CurrencyExchangePipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  currenyRate:Map<string,number> = new Map<string,number>([['CNY', 6.79],['JPY',112.42]]);
+
+  transform(value: any, currencyCode: string ): any {
+    return value * this.currenyRate.get(currencyCode);
   }
 
 }

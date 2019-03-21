@@ -30,6 +30,7 @@ import { CcParentComponent } from './demos/component-communication/cc-parent/cc-
 import { CcAnotherChildComponent } from './demos/component-communication/cc-another-child/cc-another-child.component';
 import { PipeComponent } from './demos/pipe/pipe.component';
 import { CurrencyExchangePipe } from './demos/pipe/currency-exchange.pipe';
+import { MyfilterPipe } from './demos/pipe/myfilter.pipe';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { CurrencyExchangePipe } from './demos/pipe/currency-exchange.pipe';
     CcAnotherChildComponent,
     PipeComponent,
     CurrencyExchangePipe,
+    MyfilterPipe,
     
   ],
   imports: [

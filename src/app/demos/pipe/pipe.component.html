@@ -1,7 +1,7 @@
-<!-- <h2>custome pipe - pure pipe</h2>
+<h2>custome pipe - pure pipe</h2>
 <p>{{ money | currency : 'USD': true }}</p>
-<p>{{ money | currencyExchange : 'CNY': true }}</p>
-<p>{{ money | currencyExchange : 'JPY': true }}</p>
+<p>{{ money | currencyExchange : 'CNY'|currency : 'CNY': true }}</p>
+<p>{{ money | currencyExchange : 'JPY'|currency : 'JPY': true }}</p>
 
 <h2>impure pipe</h2>
 
@@ -16,4 +16,4 @@
 <button class="btn btn-primary" (click)="addMoney()">Add money</button>
 
 <h2>Async pipe - impure pipe</h2>
-<p>{{ fetchMoney | async | currency}}</p> -->
+<p>{{ fetchMoney | async | currency}}</p>
